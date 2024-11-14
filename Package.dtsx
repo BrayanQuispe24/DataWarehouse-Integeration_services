@@ -11,8 +11,8 @@
   DTS:LocaleID="22538"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="321"
-  DTS:VersionGUID="{47CBA718-2C93-438E-B49D-AB13F61E3271}">
+  DTS:VersionBuild="324"
+  DTS:VersionGUID="{0F697E75-6B9E-4558-BEC3-A90BF3D4AAA9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -8739,8 +8739,8 @@ where id_airplane=?</property>
                       description="Comando SQL para ejecutar."
                       name="SqlCommand"
                       UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT Airplane.id, Plane_Model.description, Plane_Model.seat_amount, Airplane.registration_number
-FROM     Airplane INNER JOIN
-                  Plane_Model ON Airplane.plane_model_id = Plane_Model.id</property>
+FROM   Airplane INNER JOIN
+             Plane_Model ON Airplane.plane_model_id = Plane_Model.id</property>
                     <property
                       dataType="System.String"
                       description="Variable que contiene el comando SQL para ejecutar."
@@ -18042,7 +18042,7 @@ WHERE id_status_flight =?</property>
           PanelSize="272,134.4"
           Size="272,177.6"
           Id="Package\Migramos datos para la dimension Type_flight"
-          TopLeft="383.387755111381,73.6638655289824" />
+          TopLeft="379.306122449631,73.6638655289824" />
         <NodeLayout
           Size="212,41.6"
           Id="Package\Migramos datos para la dimension vuelo\Insertamos nuevos registros"
@@ -18095,9 +18095,9 @@ WHERE id_status_flight =?</property>
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="269.6,132.8"
-          Size="269.6,176"
+          Size="300,176"
           Id="Package\Migrar datos de Airplane(Airplane_tickets)"
-          TopLeft="78.1224490245561,79.8739495562759" />
+          TopLeft="67.9183673701814,77.6890756086112" />
         <NodeLayout
           Size="176,41.6"
           Id="Package\Migrar datos de Airport,City,Country(Airport_tickets)\Tarea Flujo de datos"
@@ -18177,18 +18177,30 @@ WHERE id_status_flight =?</property>
           TopLeft="80.1020409868428,532.184873833716" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="347.722449024556,165.168907542629">
+          TopLeft="217.918367370181,253.689075608611">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="35.6653060868243,0"
+              EndConnector="297.38775507945,-2.42521007962878"
               Start="0,0"
-              End="28.1653060868243,0">
+              End="297.38775507945,5.07478992037122">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="28.1653060868243,0" />
+                    End="0,18.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.5"
+                    Point2="0,22.5"
+                    Point3="4,22.5" />
+                  <mssgle:LineSegment
+                    End="293.38775507945,22.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="293.38775507945,22.5"
+                    Point2="297.38775507945,22.5"
+                    Point3="297.38775507945,18.5" />
+                  <mssgle:LineSegment
+                    End="297.38775507945,5.07478992037122" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -18353,18 +18365,18 @@ WHERE id_status_flight =?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="655.387755111381,161.13571433455">
+          TopLeft="651.306122449631,161.13571433455">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="71.1428586801101,0"
+              EndConnector="75.2244913418601,0"
               Start="0,0"
-              End="63.6428586801101,0">
+              End="67.7244913418601,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="63.6428586801101,0" />
+                    End="67.7244913418601,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -20137,9 +20149,7 @@ WHERE id_status_flight =?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -20596,11 +20606,11 @@ WHERE id_status_flight =?</property>
         <NodeLayout
           Size="154.4,41.6"
           Id="Package\Migrar datos de Airplane(Airplane_tickets)\Tarea Flujo de datos\Conditional Split"
-          TopLeft="320.714286397002,221.164705722153" />
+          TopLeft="320.714286397002,228.811764538979" />
         <NodeLayout
           Size="164.8,41.6"
           Id="Package\Migrar datos de Airplane(Airplane_tickets)\Tarea Flujo de datos\OLE DB Command"
-          TopLeft="324.285714976033,302.647058600321" />
+          TopLeft="317.142857817971,331.705882104262" />
         <EdgeLayout
           Id="Package\Migrar datos de Airplane(Airplane_tickets)\Tarea Flujo de datos.Paths[Salida de origen de OLE DB]"
           TopLeft="206.98571427355,80.0117647326941">
@@ -20620,9 +20630,7 @@ WHERE id_status_flight =?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20663,73 +20671,61 @@ WHERE id_status_flight =?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Migrar datos de Airplane(Airplane_tickets)\Tarea Flujo de datos.Paths[Lookup Match Output]"
-          TopLeft="223.866666985977,168.541176359319">
+          TopLeft="223.866666985978,168.541176359319">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="174.047619411025,52.6235293628332"
+              EndConnector="174.047619411024,60.2705881796604"
               Start="0,0"
-              End="174.047619411025,45.1235293628332">
+              End="174.047619411024,52.7705881796604">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.4910077957305" />
+                    End="0,20.6140024453998" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,17.4910077957305"
-                    Point2="0,21.4910077957305"
-                    Point3="4,21.4910077957305" />
+                    Point1="0,20.6140024453998"
+                    Point2="0,24.6140024453998"
+                    Point3="4,24.6140024453998" />
                   <mssgle:LineSegment
-                    End="170.047619411025,21.4910077957305" />
+                    End="170.047619411024,24.6140024453998" />
                   <mssgle:CubicBezierSegment
-                    Point1="170.047619411025,21.4910077957305"
-                    Point2="174.047619411025,21.4910077957305"
-                    Point3="174.047619411025,25.4910077957305" />
+                    Point1="170.047619411024,24.6140024453998"
+                    Point2="174.047619411024,24.6140024453998"
+                    Point3="174.047619411024,28.6140024453998" />
                   <mssgle:LineSegment
-                    End="174.047619411025,45.1235293628332" />
+                    End="174.047619411024,52.7705881796604" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="38.8324229867625,26.4910077957305,96.3827734375,11.609375"
+              BoundingBox="38.8324229867622,29.6140024453998,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Migrar datos de Airplane(Airplane_tickets)\Tarea Flujo de datos.Paths[diferentes]"
-          TopLeft="397.914286397002,262.764705722153">
+          TopLeft="398.728572107486,270.411764538979">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="8.77142857903129,39.8823528781687"
+              EndConnector="0,61.2941175652821"
               Start="0,0"
-              End="8.77142857903129,32.3823528781687">
+              End="0,53.7941175652821">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.9411764390844" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,15.9411764390844"
-                    Point2="0,19.9411764390844"
-                    Point3="4,19.9411764390844" />
-                  <mssgle:LineSegment
-                    End="4.77142857903129,19.9411764390844" />
-                  <mssgle:CubicBezierSegment
-                    Point1="4.77142857903129,19.9411764390844"
-                    Point2="8.77142857903129,19.9411764390844"
-                    Point3="8.77142857903129,23.9411764390844" />
-                  <mssgle:LineSegment
-                    End="8.77142857903129,32.3823528781687" />
+                    End="0,53.7941175652821" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-18.2564732104844,24.9411764390844,45.284375,9.7978515625"
+              BoundingBox="-22.6421875,21.998133001391,45.284375,9.7978515625"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -21647,9 +21643,7 @@ WHERE id_status_flight =?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21683,9 +21677,7 @@ WHERE id_status_flight =?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21719,9 +21711,7 @@ WHERE id_status_flight =?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21755,9 +21745,7 @@ WHERE id_status_flight =?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21779,9 +21767,7 @@ WHERE id_status_flight =?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21803,9 +21789,7 @@ WHERE id_status_flight =?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21827,9 +21811,7 @@ WHERE id_status_flight =?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21851,9 +21833,7 @@ WHERE id_status_flight =?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21875,9 +21855,7 @@ WHERE id_status_flight =?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21899,9 +21877,7 @@ WHERE id_status_flight =?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21923,9 +21899,7 @@ WHERE id_status_flight =?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
